@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactForm.css";
-import validate from "./ValidateInfo";
 import useForm from "./useForm";
+import validate from "./ValidateInfo";
 
 const ContactForm = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, error } = useForm(
@@ -21,9 +21,9 @@ const ContactForm = ({ submitForm }) => {
             <input
               id="fname"
               type="text"
-              name="fname"
+              name="fName"
               className="input-field"
-              value={values.fname}
+              value={values.fName}
               onChange={handleChange}
               required
             />
@@ -36,9 +36,9 @@ const ContactForm = ({ submitForm }) => {
             <input
               id="lname"
               type="text"
-              name="lname"
+              name="lName"
               className="input-field"
-              value={values.lname}
+              value={values.lName}
               onChange={handleChange}
               required
             />
@@ -72,9 +72,9 @@ const ContactForm = ({ submitForm }) => {
               <select
                 id="CountryCode"
                 type="text"
-                name="CountryCode"
+                name="countryCode"
                 className="input-field"
-                value={values.CountryCode}
+                value={values.countryCode}
                 onChange={handleChange}
                 required
               >
@@ -730,7 +730,7 @@ const ContactForm = ({ submitForm }) => {
               <input
                 id="phoneno"
                 type="tel"
-                name="phoneno"
+                name="phone"
                 className="input-field"
                 value={values.phoneno}
                 onChange={handleChange}
@@ -746,9 +746,9 @@ const ContactForm = ({ submitForm }) => {
             <select
               id="counselMode"
               type="text"
-              name="counselMode"
+              name="counselingMode"
               className="input-field"
-              value={values.counselMode}
+              value={values.counselingMode}
               onChange={handleChange}
               required
             >
@@ -765,9 +765,9 @@ const ContactForm = ({ submitForm }) => {
             <select
               id="Studylevel"
               type="text"
-              name="Studylevel"
+              name="studyLevel"
               className="input-field"
-              value={values.Studylevel}
+              value={values.studyLevel}
               onChange={handleChange}
               required
             >
